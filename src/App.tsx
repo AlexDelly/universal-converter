@@ -1,3 +1,13 @@
+import React from "react";
+import { StyledEngineProvider } from "@mui/material";
+import PersistentDrawerLeft from "./components/demo";
+
 export const App = () => {
-  return <h1>Hello world</h1>;
+  return (
+    <React.StrictMode>
+      <StyledEngineProvider injectFirst>
+        <PersistentDrawerLeft />
+      </StyledEngineProvider>
+    </React.StrictMode>
+  );
 };
