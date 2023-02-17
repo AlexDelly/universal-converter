@@ -1,12 +1,12 @@
 import React from "react";
 import { StyledEngineProvider } from "@mui/material";
-import PersistentDrawerLeft from "./components/demo";
+import { MainPage } from "./components";
 
 export const App = () => {
   return (
     <React.StrictMode>
       <StyledEngineProvider injectFirst>
-        <PersistentDrawerLeft />
+        <MainPage />
       </StyledEngineProvider>
     </React.StrictMode>
   );
